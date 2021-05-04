@@ -1,17 +1,17 @@
-package oyunProject;
+package consolUI;
 
 import java.time.LocalDate;
 
-import mernisService.Concrate.NationalityManager;
-import oyunProject.Entities.Campaign;
-import oyunProject.Entities.Game;
-import oyunProject.Entities.Sale;
-import oyunProject.Entities.SaleDTO;
-import oyunProject.Entities.User;
-import oyunProject.Manager.CampaignManager;
-import oyunProject.Manager.GameManager;
-import oyunProject.Manager.SaleManager;
-import oyunProject.Manager.UserManager;
+import entities.Campaign;
+import entities.Game;
+import entities.Sale;
+import entities.SaleDTO;
+import entities.User;
+import manager.CampaignManager;
+import manager.GameManager;
+import manager.NationalityManager;
+import manager.SaleManager;
+import manager.UserManager;
 
 public class Main {
 

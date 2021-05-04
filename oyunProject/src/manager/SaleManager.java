@@ -1,8 +1,8 @@
-package oyunProject.Manager;
+package manager;
 
-import oyunProject.Entities.SaleDTO;
-import oyunProject.Service.CampaignService;
-import oyunProject.Service.SaleService;
+import entities.SaleDTO;
+import service.CampaignService;
+import service.SaleService;
 
 public class SaleManager implements SaleService {
 	

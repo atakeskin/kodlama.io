@@ -1,4 +1,4 @@
-package oyunProject.Entities;
+package entities;
 
 public class Game implements Entity {
 	

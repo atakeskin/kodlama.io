@@ -1,9 +1,9 @@
-package mernisService.Concrate;
+package manager;
 
 import java.rmi.RemoteException;
 
-import mernisService.Abstract.NationalityService;
-import oyunProject.Entities.User;
+import entities.User;
+import service.NationalityService;
 import tr.gov.nvi.tckimlik.WS.KPSPublicSoap;
 import tr.gov.nvi.tckimlik.WS.KPSPublicSoapProxy;
 

@@ -1,7 +1,7 @@
-package oyunProject.Manager;
+package manager;
 
-import oyunProject.Entities.Campaign;
-import oyunProject.Service.CampaignService;
+import entities.Campaign;
+import service.CampaignService;
 
 public class CampaignManager implements CampaignService{
 

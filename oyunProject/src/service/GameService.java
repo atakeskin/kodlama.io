@@ -1,6 +1,6 @@
-package oyunProject.Service;
+package service;
 
-import oyunProject.Entities.Game;
+import entities.Game;
 
 public interface GameService extends BaseService<Game> {
 	

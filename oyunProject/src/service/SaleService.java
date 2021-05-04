@@ -1,6 +1,6 @@
-package oyunProject.Service;
+package service;
 
-import oyunProject.Entities.SaleDTO;
+import entities.SaleDTO;
 
 public interface SaleService {
 	

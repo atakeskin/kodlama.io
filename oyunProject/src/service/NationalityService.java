@@ -1,6 +1,6 @@
-package mernisService.Abstract;
+package service;
 
-import oyunProject.Entities.User;
+import entities.User;
 
 public interface NationalityService {
 	

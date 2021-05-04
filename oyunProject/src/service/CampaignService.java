@@ -1,6 +1,6 @@
-package oyunProject.Service;
+package service;
 
-import oyunProject.Entities.Campaign;
+import entities.Campaign;
 
 public interface CampaignService extends BaseService<Campaign> {
 	

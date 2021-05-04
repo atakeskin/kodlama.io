@@ -1,7 +1,7 @@
-package oyunProject.Manager;
+package manager;
 
-import oyunProject.Entities.Game;
-import oyunProject.Service.GameService;
+import entities.Game;
+import service.GameService;
 
 public class GameManager implements GameService{
 
