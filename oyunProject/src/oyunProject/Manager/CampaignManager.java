@@ -8,14 +8,14 @@ public class CampaignManager implements CampaignService{
 	@Override
 	public void add(Campaign campaign) {
 		
-		System.out.println("%"+campaign.getDiscountRate()+" oranýnda indirim yapan "+campaign.getName()+" eklendi.");
+		System.out.println("%"+campaign.getDiscountRate()+" oranÄ±nda indirim yapan "+campaign.getName()+" eklendi.");
 		
 	}
 
 	@Override
 	public void update(Campaign campaign) {
 		campaign.setDiscountRate(campaign.getDiscountRate()+10);
-		System.out.println(campaign.getName()+" %"+campaign.getDiscountRate()+" oraný olarak yeniden güncellendi.");
+		System.out.println(campaign.getName()+" %"+campaign.getDiscountRate()+" oranÄ± olarak yeniden gÃ¼ncellendi.");
 		
 	}
 

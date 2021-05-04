@@ -17,30 +17,26 @@ public class UserManager implements UserService {
 
 	@Override
 	public void add(User user) {
-		if (nationalityService.verify(user)) {
-			System.out.println(user.getFirstName()+" adlý kiþi kaydedildi.");	
-		} else {
-			System.out.println(user.getFirstName()+" adlý kiþi kaydedilmedi.");	
-		}			
+		runOperationWithCheck(user,"kaydedildi.","kaydedilmesi.");		
 	}
 
 	@Override
 	
 	public void update(User user) {
-		if (nationalityService.verify(user)) {
-			System.out.println(user.getFirstName()+" adlý kiþi güncellendi.");	
-		} else {
-			System.out.println(user.getFirstName()+" adlý kiþi güncellenmedi.");	
-		}		
+		runOperationWithCheck(user,"gÃ¼ncellendi.","gÃ¼ncellenmedi.");	
 	}
 
 	@Override
 	public void delete(User user) {
+		runOperationWithCheck(user,"silindi.","silinemedi.");	
+	}
+	
+	private void runOperationWithCheck(User user,String upMessage,String downMessage) {
 		if (nationalityService.verify(user)) {
-			System.out.println(user.getFirstName()+" adlý kiþi silindi.");	
+			System.out.println(user.getFirstName()+" adlÄ± kiÅŸi "+upMessage);	
 		} else {
-			System.out.println(user.getFirstName()+" adlý kiþi silinemedi.");	
-		}		
+			System.out.println(user.getFirstName()+" adlÄ± kiÅŸi "+downMessage);	
+		}	
 	}
 
 }

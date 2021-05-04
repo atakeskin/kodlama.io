@@ -1,12 +1,12 @@
 package oyunProject.Entities;
 
-public class SaleDTO {
+public class SaleDTO implements Dto {
 	
 	private String gameName;
 	private String userName;
 	private String campaignName;
 	private double price;
-	private int discountRate;
+	private int discountRate=0;
 	private double discountedPrice;
 	
 	public SaleDTO() {

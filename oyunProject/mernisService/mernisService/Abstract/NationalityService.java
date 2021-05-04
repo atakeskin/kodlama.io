@@ -1,9 +1,9 @@
 package mernisService.Abstract;
 
-import oyunProject.Entities.Person;
+import oyunProject.Entities.User;
 
 public interface NationalityService {
 	
-	boolean verify(Person person);
+	boolean verify(User user);
 
 }

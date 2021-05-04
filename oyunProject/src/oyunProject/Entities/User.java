@@ -1,23 +1,27 @@
 package oyunProject.Entities;
 
-public class User extends Person implements Entity {
+import java.time.LocalDate;
+
+public class User implements Entity {
 	
 	private int id;
 	private String firstName;
 	private String lastName;
-	private String birdOfYear;
+	private String identityNumber;
+	private LocalDate dateOfBird;
 	
 	public User() {
 		super();
 	}
 
-	public User(int id, String identityNumber, String firstName, String lastName, String birdOfYear) {
+	public User(int id, String firstName, String lastName, String identityNumber, LocalDate dateOfBird) {
 		
-		super(identityNumber);
+		this();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.birdOfYear = birdOfYear;
+		this.identityNumber = identityNumber;
+		this.dateOfBird = dateOfBird;
 	}
 
 	public int getId() {
@@ -44,12 +48,20 @@ public class User extends Person implements Entity {
 		this.lastName = lastName;
 	}
 
-	public String getBirdOfYear() {
-		return birdOfYear;
+	public String getIdentityNumber() {
+		return identityNumber;
 	}
 
-	public void setBirdOfYear(String birdOfYear) {
-		this.birdOfYear = birdOfYear;
+	public void setIdentityNumber(String identityNumber) {
+		this.identityNumber = identityNumber;
+	}
+
+	public LocalDate getDateOfBird() {
+		return dateOfBird;
+	}
+
+	public void setDateOfBird(LocalDate dateOfBird) {
+		this.dateOfBird = dateOfBird;
 	}	
 
 }

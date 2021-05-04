@@ -2,10 +2,6 @@ package oyunProject.Service;
 
 import oyunProject.Entities.User;
 
-public interface UserService {
-	
-	void add(User user);
-	void update(User user);
-	void delete(User user);
+public interface UserService extends BaseService<User> {
 
 }

@@ -1,5 +1,7 @@
 package oyunProject;
 
+import java.time.LocalDate;
+
 import mernisService.Concrate.NationalityManager;
 import oyunProject.Entities.Campaign;
 import oyunProject.Entities.Game;
@@ -13,11 +15,9 @@ import oyunProject.Manager.UserManager;
 
 public class Main {
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
 	
-		User user1 = new User(1,"123456789","Atalay","Keskin","1980");
-		
+		User user1 = new User(1,"Atalay","Keskin","11001100110",LocalDate.of(1985, 10, 21));		
 		UserManager userManager = new UserManager(new NationalityManager());
 		userManager.add(user1);
 		userManager.update(user1);
@@ -27,7 +27,7 @@ public class Main {
 		GameManager gameManager = new GameManager();
 		gameManager.add(game1);
 		
-		Campaign campaign1 = new Campaign(1,"Süper indirim Kampanyasý",35);
+		Campaign campaign1 = new Campaign(1,"SÃ¼per indirim KampanyasÄ±",35);
 		CampaignManager campaignManager = new CampaignManager();
 		campaignManager.add(campaign1);
 		campaignManager.update(campaign1);
@@ -44,8 +44,7 @@ public class Main {
 				user1.getFirstName()+" "+user1.getLastName(),
 				campaign1.getName(),sale1.getPrice());
 		
-		SaleManager saleManager = new SaleManager(new CampaignManager());
-		
+		SaleManager saleManager = new SaleManager(new CampaignManager());		
 		saleManager.salesGaming(saleDto);
 		
 

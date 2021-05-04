@@ -2,10 +2,7 @@ package oyunProject.Service;
 
 import oyunProject.Entities.Game;
 
-public interface GameService {
+public interface GameService extends BaseService<Game> {
 	
-	void add(Game game);
-	void update(Game game);
-	void delete(Game game);
 
 }

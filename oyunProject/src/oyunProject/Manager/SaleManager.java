@@ -22,14 +22,14 @@ public class SaleManager implements SaleService {
 		
 		if (CheckOfDiscountedRate(saleDto)) {
 			System.out.println(
-					saleDto.getUserName() + " adlý oyuncuya "+
-					saleDto.getGameName()+" adlý oyun "+
-					saleDto.getDiscountedPrice()+" fiyatla satýþý yapýldý.");
+					saleDto.getUserName() + " adlÄ± oyuncuya "+
+					saleDto.getGameName()+" adlÄ± oyun "+
+					saleDto.getDiscountedPrice()+" fiyatla satÄ±ÅŸ yapÄ±ldÄ±.");
 		} else {
 			System.out.println(
-					saleDto.getUserName() + " adlý oyuncuya "+
-					saleDto.getGameName()+" adlý oyun "+
-					saleDto.getPrice()+" fiyatla satýþý yapýldý.");
+					saleDto.getUserName() + " adlÄ± oyuncuya "+
+					saleDto.getGameName()+" adlÄ± oyun "+
+					saleDto.getPrice()+" fiyatla satÄ±ÅŸ yapÄ±ldÄ±.");
 		}
 		
 		
